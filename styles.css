@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e3fdfd;
+}
+.hii
+{
+    width: 30px;
+    height: 30px;
+}
+h1 {
+ padding-left: 100px;
+  font-family: "Moon Dance", cursive;
+}
+.typewrite {
+    color:#434242;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+  font-family: "Roboto Slab", serif;
+}
+a {
+    font-weight: bold;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+a:hover {
+  background-color: antiquewhite;
+  border-radius: 50px;
+}
+.navbar {
+  text-align: center;
+  background-color: grey;
+  margin-top: 10px;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.home {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.project {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.resume {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.about {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+p
+{
+    width: 400px;
+}
+
+.code_image {
+    border-radius: 20px;
+  float:left;
+  width: 100px;
+  height: 100px;
+}
+.poem_image {
+  width: 100px;
+  height: 100px;
+}
