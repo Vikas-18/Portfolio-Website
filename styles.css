@@ -289,5 +289,23 @@ h4{
   width: 50%;
 }
 
+/* responsive behaviour */
+
+@media (max-width: 998px) {
+  html
+  {
+    font-size: 55%;
+  }
+  
+}
+@media (max-width: 768px) {
+  html
+  {
+    font-size: 45%;
+  }
+  
+}
+
+
 
 
