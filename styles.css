@@ -230,10 +230,13 @@ h4{
 {
   text-align: center;
 }
-.resume{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 750px;
+.responsive {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  height: auto;
 }
 
 /* Projects */
@@ -290,6 +293,62 @@ h4{
 }
 
 /* responsive behaviour */
+@media (max-width:800px)
+{
+
+  .code_skill {
+    width: 50%;
+    margin: 100px auto 100px auto;
+  }
+  .code_image {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    float:none;
+    
+  }
+  .poem_skill {
+    width: 50%;
+    margin: 100px auto 100px auto;
+  }
+  .poem_image {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    float:none;
+  }
+  .cricket {
+    width: 50%;
+    margin: 100px auto 100px auto;
+  }
+  
+  .virat {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    float:none;
+  }
+  .youtube {
+    width: 50%;
+    margin: 100px auto 100px auto;
+  }
+  .yt {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    float:none;
+    margin: 0;
+  }
+  .ytlink {
+    color: #e6ddc4;
+  }
+  .ytlink:hover {
+    color: #e8d265;
+  }
+}
+
+
+
 
 
 
