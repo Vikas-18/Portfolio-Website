@@ -5,6 +5,10 @@
 body {
   background-color: #181d31;
   color: #f0e9d2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 /* home */
 .avatar {
@@ -139,7 +143,10 @@ footer {
   padding: 0.5em;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.152);
+  z-index: 111;
+  margin-top: auto;
 }
+
 .lclogo {
   padding-top: 10px;
   padding-right: 20px;
@@ -292,10 +299,24 @@ h4{
   width: 50%;
 }
 
+
+
+
 /* responsive behaviour */
 @media (max-width:800px)
 {
-
+  h1 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-family: "Moon Dance", cursive;
+  }
+  .typewrite {
+    color: #f0e9d2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Roboto Slab", serif;
+  }
   .code_skill {
     width: 50%;
     margin: 100px auto 100px auto;
@@ -344,6 +365,10 @@ h4{
   }
   .ytlink:hover {
     color: #e8d265;
+  }
+  .description {
+    width: 300px; /*set the width as per your requirement*/
+    word-wrap: break-word;
   }
 }
 
