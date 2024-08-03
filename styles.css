@@ -8,14 +8,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 /* home */
 .avatar {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 60px;
+  width: 200px;
+
+  border-radius: 50%;
 }
 .hii {
   width: 30px;
@@ -57,7 +58,7 @@ a {
 }
 .navbar {
   text-align: center;
-  background-color: #CBEDD5;
+  background-color: #cbedd5;
   margin-top: 10px;
   padding: 15px;
   margin-left: 15px;
@@ -66,6 +67,10 @@ a {
   border-radius: 50px;
 }
 .home {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.achievements {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -120,23 +125,6 @@ p {
   float: left;
   margin-right: 30px;
 }
-.youtube {
-  width: 50%;
-  margin: 100px auto 100px auto;
-}
-.yt {
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  float: right;
-  margin-left: 30px;
-}
-.ytlink {
-  color: #e6ddc4;
-}
-.ytlink:hover {
-  color: #e8d265;
-}
 
 footer {
   display: block;
@@ -147,7 +135,7 @@ footer {
   margin-top: auto;
 }
 
-.lclogo {
+.maillogo {
   padding-top: 10px;
   padding-right: 20px;
   width: 30px;
@@ -162,13 +150,34 @@ footer {
   padding-right: 20px;
   width: 30px;
 }
+/* achievements */
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.para {
+  margin: 2rem;
+  width: 40rem;
+}
+.vigyaan {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.leetcode {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
 /* about */
 .des {
   width: 50%;
   padding-left: 40px;
 }
-.heading
-{
+.heading {
   margin-top: 100px;
 }
 .developer_img {
@@ -209,7 +218,7 @@ li {
   font-size: 20px;
   font-family: "Roboto Slab", serif;
 }
-.point_right{
+.point_right {
   width: 20px;
   height: 20px;
 }
@@ -219,13 +228,13 @@ li {
   font-size: 20px;
   font-family: "Roboto Slab", serif;
 }
-.logo{
+.logo {
   height: 100px;
   width: 100px;
   padding-bottom: 10px;
   padding-top: 20px;
 }
-h4{
+h4 {
   padding-top: 50px;
   padding-bottom: 10px;
   text-align: center;
@@ -233,8 +242,7 @@ h4{
 }
 
 /* resume */
-.pdf
-{
+.pdf {
   text-align: center;
 }
 .responsive {
@@ -283,10 +291,10 @@ h4{
   margin-right: auto;
   text-align: center;
 }
-.card-title{
+.card-title {
   color: #49748f;
 }
-.card-text{
+.card-text {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 10px;
@@ -294,17 +302,12 @@ h4{
   color: #181d31;
 }
 
-
 .card img {
   width: 50%;
 }
 
-
-
-
 /* responsive behaviour */
-@media (max-width:800px)
-{
+@media (max-width: 800px) {
   h1 {
     text-align: left;
     padding-top: 10px;
@@ -325,8 +328,7 @@ h4{
     border-radius: 20px;
     width: 100px;
     height: 100px;
-    float:none;
-    
+    float: none;
   }
   .poem_skill {
     width: 50%;
@@ -336,64 +338,59 @@ h4{
     border-radius: 20px;
     width: 100px;
     height: 100px;
-    float:none;
+    float: none;
   }
   .cricket {
     width: 50%;
     margin: 50px auto 50px auto;
   }
-  
+
   .virat {
     border-radius: 20px;
     width: 100px;
     height: 100px;
-    float:none;
+    float: none;
   }
-  .youtube {
-    width: 50%;
-    margin: 50px auto 50px auto;
-  }
-  .yt {
-    border-radius: 20px;
-    width: 100px;
-    height: 100px;
-    float:none;
-    margin: 0;
-  }
-  .ytlink {
-    color: #e6ddc4;
-  }
-  .ytlink:hover {
-    color: #e8d265;
-  }
+
   .description {
     width: 300px; /*set the width as per your requirement*/
     word-wrap: break-word;
   }
   .navbar {
-  background-color: #CBEDD5;
-  margin-top: 10px;
-  padding: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  border-radius: 50px;
+    background-color: #cbedd5;
+    margin-top: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 50px;
   }
-  .navbar .effect{
+  .navbar .effect {
     justify-content: center;
     padding: 5px 0 5px 0;
     display: block;
   }
-  .effect{
+  .effect {
     display: flex;
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .para {
+    margin: 1rem;
+    width: 100%;
+  }
+  .vigyaan,
+  .leetcode {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+}
