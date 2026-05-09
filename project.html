@@ -1,122 +1,109 @@
-
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="images/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="images/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="images/favicon-16x16.png"
-      />
-      <link rel="manifest" href="/site.webmanifest" />
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Moon+Dance&family=Roboto+Slab:wght@300&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="styles.css" />
-      <script src="main.js"></script>
-      <title>VIKAS KUMAR | PORTFOLIO</title>
-    </head>
-    <body>
-       <div class="navbar">
-      <a class="home effect" href="index.html">Home</a>
-      <a class="achievements effect" href="achievements.html">Achievements</a>
-      <a class="about effect" href="about.html">Skills</a>
-      <a class="project effect" href="project.html">Projects</a>
-      <a class="resume effect" href="resume.html">Resume</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <title>Projects | VIKAS KUMAR</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar animate-on-scroll is-visible">
+    <a href="index.html">Home</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="about.html">Skills</a>
+    <a href="project.html" class="active">Projects</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title animate-on-scroll">My Projects</h2>
+
+      <div class="card-grid">
+        
+        <div class="modern-card animate-on-scroll">
+          <img src="./images/chatbot.png" alt="Hostel ChatBot" />
+          <h3>Hostel ChatBot</h3>
+          <p>
+            This ChatBot smoothens the process of registering complaints to the helpdesk of NITRR hostel. You just need to interact with the bot and register your complaint quickly and efficiently.
+          </p>
+          <a href="https://hostelchatbotnitrr.netlify.app/" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="modern-card animate-on-scroll">
+          <img src="./images/attendance.png" alt="Attendance Marker" />
+          <h3>Attendance Marker</h3>
+          <p>
+            The website utilizes the geolocation API, ensuring that students can only mark attendance if they're physically present within a 10-meter radius of the class center.
+          </p>
+          <a href="https://attendancenitrr.netlify.app/" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="modern-card animate-on-scroll">
+          <img src="./images/coronavirus.png" alt="Covid-19 Tracker" />
+          <h3>Covid-19 Tracker</h3>
+          <p>
+            This web app provides real-time data of COVID-19, including deaths and active cases. Search any country name to get results based on the COVID-19 free API.
+          </p>
+          <a href="https://covid19trakcer.netlify.app/" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="modern-card animate-on-scroll">
+          <img src="./images/programming.png" alt="Coding Duniya" />
+          <h3>Coding Duniya</h3>
+          <p>
+            This website is designed to help students who want to learn tech skills. It aggregates the best YouTube channels and website resources in one place.
+          </p>
+          <a href="https://codingduniya.netlify.app" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="modern-card animate-on-scroll">
+          <img src="https://cricketerinfo.netlify.app/image/cricketlogo.jpg" alt="CricketersInfo" style="background: white;" />
+          <h3>CricketersInfo</h3>
+          <p>
+            Provides comprehensive information about any cricketer you search for, including runs scored, wickets taken, and best ODI, T20, and Test rankings.
+          </p>
+          <a href="https://cricketerinfo.netlify.app/index.html" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="modern-card animate-on-scroll">
+          <img src="https://superheroinfo.netlify.app/images/images.png" alt="SuperHeroInfo" style="background: white; object-fit: contain;" />
+          <h3>SuperHeroInfo</h3>
+          <p>
+            This website provides all the information, stats, and background details of your favorite superheroes in an easily accessible format.
+          </p>
+          <a href="https://superheroinfo.netlify.app/" target="_blank" class="btn">View Project</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/" target="_blank" aria-label="LinkedIn">
+        <img src="./images/linkedin.png" alt="LinkedIn Logo" />
+      </a>
+      <a href="https://github.com/Vikas-18" target="_blank" aria-label="GitHub">
+        <img src="./images/github.png" alt="GitHub Logo" />
+      </a>
+      <a href="mailto:vikaskumar2k24ee@gmail.com" aria-label="Email">
+        <img src="./images/mail.png" alt="mail Logo" />
+      </a>
     </div>
-     <h2>Projects</h2>
-     <div div data-aos="zoom-in" class="card">
-        <img src="./images/chatbot.png" alt="ChatBot image">
-        <div class="card-body">
-          <h2 class="card-title">Hostel ChatBot</h2>
-          <p class="card-text">
-            This ChatBot just smoothens downs the process of regestering complain to the helpdesk of NITRR hostel you just need to interact with the bot and then just register your complain</p>
-          <a href="https://hostelchatbotnitrr.netlify.app/" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-      <div div data-aos="zoom-in" class="card">
-        <img src="./images/attendance.png" alt="ChatBot image">
-        <div class="card-body">
-          <h2 class="card-title">Attendance Marker</h2>
-          <p class="card-text">
-            The website utilizes geolocation API, ensuring that students can only mark attendance if they're physically present within a 10-meter radius of the class center.</p>
-          <a href="https://attendancenitrr.netlify.app/" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-     <div div data-aos="zoom-in" class="card">
-        <img src="./images/coronavirus.png" alt="Corona image">
-        <div class="card-body">
-          <h2 class="card-title">Covid-19 Tracker</h2>
-          <p class="card-text">This covid 19 tracker web app is app which provides real time data of covid 19 like deaths and active cases till now you can search any country name in the search box and then you will get results based on that country this is based on covid19 free api available on internet</p>
-          <a href="https://covid19trakcer.netlify.app/" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-     
-     <div div data-aos="zoom-in" class="card">
-        <img src="./images/programming.png" alt="Programing image">
-        <div class="card-body">
-          <h2 class="card-title"> Coding Duniya </h2>
-            <p class="card-text"> This website is there to help students who wants to learn tech skills, this website includes best channel available on youtube and best website resources so kindly check it once.</p>
-          <a href="https://codingduniya.netlify.app" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-     <div div data-aos="zoom-in" class="card">
-        <img src="https://cricketerinfo.netlify.app/image/cricketlogo.jpg" alt="cricketerinfo logo">
-        <div class="card-body">
-          <h2 class="card-title"> CricketersInfo </h2>
-            <p class="card-text"> This website gives you everything related to any cricketer you search on this website 
-                their runs scored wickets taken best ODI T20 Test rankings and many more.</p>
-          <a href="https://cricketerinfo.netlify.app/index.html" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-     <div div data-aos="zoom-in" class="card">
-        <img src="https://superheroinfo.netlify.app/images/images.png" alt="SuperHeroInfo logo">
-        <div class="card-body">
-          <h2 class="card-title"> SuperHeroInfo </h2>
-            <p class="card-text">
-                This website just provides all the information of your favourite superstar.</p>
-          <a href="https://superheroinfo.netlify.app/" class="btn btn-primary">Website</a>
-        </div>
-      </div>
-     
-     
-      <h4>Designed and Developed by VIKAS KUMAR</h4>
-      <!-- footer -->
-       <footer>
-      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/">
-        <img class="inlogo" src="./images/linkedin.png" alt="LinkedIn Logo" />
-      </a>
-      <a href="https://github.com/Vikas-18">
-        <img class="gitlogo" src="./images/github.png" alt="GitHub Logo" />
-      </a>
-      <a href="mailto:vikaskumar2k24ee@gmail.com">
-        <img class="maillogo" src="./images/mail.png" alt="mail Logo" />
-      </a>
-    </footer>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-      });
-    </script>
-    </body>
-  </html>
-  </body>
-  </html>
+    <p class="footer-text">Designed & Developed by <span style="color: var(--accent-primary);">VIKAS KUMAR</span></p>
+  </footer>
+
+</body>
+</html>

@@ -1,164 +1,173 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Moon+Dance&family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
-    <title>VIKAS KUMAR | PORTFOLIO</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <a class="home effect" href="index.html">Home</a>
-      <a class="achievements effect" href="achievements.html">Achievements</a>
-      <a class="about effect" href="about.html">Skills</a>
-      <a class="project effect" href="project.html">Projects</a>
-      <a class="resume effect" href="resume.html">Resume</a>
-    </div>
-    <!-- about me section -->
-    <div>
-      <h1 class="know">
-        Know Who
-        <h1 class="im">I'M</h1>
-      </h1>
-    </div>
-    <!-- description -->
-    <div class="des">
-      <img
-        class="developer_img"
-        src="./images/pngwing.com.png"
-        alt="developer" />
-      <p class="description">
-        My name is Vikas Kumar, and I am from Kanpur, Uttar Pradesh, India. I
-        have graduated with a B.Tech in Electrical Engineering from the National
-        Institute of Technology, Raipur.
-      </p>
-    </div>
-    <div class="heading">
-      <h2>Apart From Academics My Hobbies</h2>
-    </div>
-    <div>
-      <ul class="hobbies">
-        <li>
-          <img class="point_right" src="./images/pointing-right.png" alt="" />
-          Sports
-        </li>
-        <li>
-          <img
-            class="point_right"
-            src="./images/pointing-right.png"
-            alt="" />Cricket
-        </li>
-        <li>
-          <img
-            class="point_right"
-            src="./images/pointing-right.png"
-            alt="" />Singing
-        </li>
-        <li>
-          <img
-            class="point_right"
-            src="./images/pointing-right.png"
-            alt="" />Reading Self Help Books
-        </li>
-        <li>
-          <img
-            class="point_right"
-            src="./images/pointing-right.png"
-            alt="pointing right" />
-          Poem Writing
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/java.png" alt="java logo" />
-          <li>Java</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <title>Skills | VIKAS KUMAR</title>
+  <style>
+    /* Specific styles for about page */
+    .hobbies-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+    .hobbies-list li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: var(--glass-bg);
+      padding: 15px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--glass-border);
+      transition: var(--transition);
+    }
+    .hobbies-list li:hover {
+      transform: translateX(10px);
+      border-color: var(--accent-primary);
+      box-shadow: 0 5px 15px rgba(0, 243, 255, 0.1);
+    }
+    .hobby-icon {
+      font-size: 1.8rem;
+      display: inline-block;
+      transition: var(--transition);
+    }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    @keyframes swing { 0% { transform: rotate(0deg); } 50% { transform: rotate(20deg); } 100% { transform: rotate(0deg); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+    @keyframes flip { 0% { transform: perspective(400px) rotateY(0); } 50% { transform: perspective(400px) rotateY(15deg); } 100% { transform: perspective(400px) rotateY(0); } }
+    @keyframes write { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-15deg); } }
+
+    .hobbies-list li:hover .icon-sports { animation: bounce 0.5s ease-in-out infinite; }
+    .hobbies-list li:hover .icon-cricket { animation: swing 0.5s ease-in-out infinite; transform-origin: bottom right; }
+    .hobbies-list li:hover .icon-sing { animation: float 1s ease-in-out infinite; }
+    .hobbies-list li:hover .icon-book { animation: flip 1s ease-in-out infinite; }
+    .hobbies-list li:hover .icon-poem { animation: write 0.5s ease-in-out infinite; transform-origin: bottom left; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar animate-on-scroll is-visible">
+    <a href="index.html">Home</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="about.html" class="active">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title animate-on-scroll">Know Who <span style="color: var(--accent-primary);">I'M</span></h2>
+      
+      <div class="feature-row animate-on-scroll">
+        <div class="feature-img">
+          <img src="./images/pngwing.com.png" alt="Developer Illustration" style="object-fit: contain; padding: 2rem; background: var(--glass-bg); backdrop-filter: blur(10px);" />
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/angular.png" alt="angular logo" />
-          <li>Angular</li>
+        <div class="feature-text modern-card glass">
+          <h3>Hi, I'm Vikas Kumar</h3>
+          <p>
+            I am from Kanpur, Uttar Pradesh, India. I have graduated with a B.Tech in Electrical Engineering from the National Institute of Technology, Raipur. I am a passionate Full Stack Developer who loves to build engaging and dynamic user experiences.
+          </p>
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/html.png" alt="html logo" />
-          <li>HTML</li>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title animate-on-scroll">My Technical Skills</h2>
+      
+      <div class="skills-grid animate-on-scroll">
+        <div class="skill-item">
+          <img src="./images/java.png" alt="Java" />
+          <span>Java</span>
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/css.png" alt="css logo" />
-          <li>CSS</li>
+        <div class="skill-item">
+          <img src="./images/spring-boot.png" alt="Java" />
+          <span>Java Springboot</span>
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/js.png" alt="js logo" />
-          <li>JS</li>
+        <div class="skill-item">
+          <img src="./images/angular.png" alt="Angular" />
+          <span>Angular</span>
+        </div>
+        <div class="skill-item">
+          <img src="./images/html.png" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <img src="./images/css.png" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-item">
+          <img src="./images/js.png" alt="JS" />
+          <span>JavaScript</span>
         </div>
 
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/react.png" alt="react logo" />
-          <li>REACTJS</li>
+        <div class="skill-item">
+          <img src="./images/mongodb-png--400.png" alt="MongoDB" />
+          <span>MongoDB</span>
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/node.png" alt="node logo" />
-          <li>NODEJS</li>
+        <div class="skill-item">
+          <img src="./images/api.png" alt="REST API" />
+          <span>REST API</span>
         </div>
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/Expressjs.png" alt="express logo" />
-          <li>EXPRESSJS</li>
-        </div>
-        <div data-aos="zoom-in">
-          <img
-            class="logo"
-            src="./images/mongodb-png--400.png"
-            alt="mongodb logo" />
-          <li>MONGODB</li>
-        </div>
+      </div>
+    </section>
 
-        <div data-aos="zoom-in">
-          <img class="logo" src="./images/api.png" alt="api logo" />
-          <li>REST API</li>
-        </div>
-      </ul>
+    <section>
+      <h2 class="section-title animate-on-scroll">Apart From Academics</h2>
+      
+      <div class="feature-row animate-on-scroll" style="max-width: 600px; margin: 0 auto 4rem;">
+        <ul class="hobbies-list">
+          <li>
+            <span class="hobby-icon icon-sports">🏅</span>
+            Sports
+          </li>
+          <li>
+            <span class="hobby-icon icon-cricket">🏏</span>
+            Cricket
+          </li>
+          <li>
+            <span class="hobby-icon icon-sing">🎤</span>
+            Singing
+          </li>
+          <li>
+            <span class="hobby-icon icon-book">📚</span>
+            Reading Self Help Books
+          </li>
+          <li>
+            <span class="hobby-icon icon-poem">✍️</span>
+            Poem Writing
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/" target="_blank" aria-label="LinkedIn">
+        <img src="./images/linkedin.png" alt="LinkedIn Logo" />
+      </a>
+      <a href="https://github.com/Vikas-18" target="_blank" aria-label="GitHub">
+        <img src="./images/github.png" alt="GitHub Logo" />
+      </a>
+      <a href="mailto:vikaskumar2k24ee@gmail.com" aria-label="Email">
+        <img src="./images/mail.png" alt="mail Logo" />
+      </a>
     </div>
-    <h4>Designed and Developed by VIKAS KUMAR</h4>
-    <!-- footer -->
-    <footer>
-      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/">
-        <img class="inlogo" src="./images/linkedin.png" alt="LinkedIn Logo" />
-      </a>
-      <a href="https://github.com/Vikas-18">
-        <img class="gitlogo" src="./images/github.png" alt="GitHub Logo" />
-      </a>
-      <a href="mailto:vikaskumar2k24ee@gmail.com">
-        <img class="maillogo" src="./images/mail.png" alt="mail Logo" />
-      </a>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-      });
-    </script>
-  </body>
+    <p class="footer-text">Designed & Developed by <span style="color: var(--accent-primary);">VIKAS KUMAR</span></p>
+  </footer>
+
+</body>
 </html>

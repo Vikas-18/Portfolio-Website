@@ -1,109 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Moon+Dance&family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-    <title>VIKAS KUMAR | PORTFOLIO</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="navbar">
-      <a class="home effect" href="index.html">Home</a>
-      <a class="achievements effect" href="achievements.html">Achievements</a>
-      <a class="about effect" href="about.html">Skills</a>
-      <a class="project effect" href="project.html">Projects</a>
-      <a class="resume effect" href="resume.html">Resume</a>
-    </div>
-    <h1>Hi There! <img class="hii" src="/images/wave.gif" alt="wave" /></h1>
-    <h1>I'm VIKAS KUMAR</h1>
-    <h1>
-      <div
-        class="typewrite"
-        data-period="2000"
-        data-type='[ "SDE@Biz2X","NIT RAIPUR 2020-2024 (EE).", "Full Stack Web Developer.", "600+ Ques On LeetCode.", "Music Lover." ]'>
-        <span class="wrap"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <title>VIKAS KUMAR | PORTFOLIO</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar animate-on-scroll is-visible">
+    <a href="index.html" class="active">Home</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="about.html">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <div class="animate-on-scroll">
+        <h1>Hi There! <img class="hii" src="./images/wave.gif" alt="wave" /></h1>
+        <h1>I'm <span class="gradient-text">VIKAS KUMAR</span></h1>
+        <div class="typewrite" data-period="2000" data-type='[ "Software Engineer @Biz2X", "NIT Raipur", "Full Stack Developer", "1000+ Problems On LeetCode" ]'>
+          <span class="wrap"></span>
+        </div>
       </div>
-    </h1>
-    <!-- introduction -->
-    <h2>Let Me Introduce Myself</h2>
-    <img class="avatar" src="./images/profilePic.jpeg" alt="Profile Picture" />
-    <div class="code_skill">
-      <img
-        class="code_image"
-        src="https://media1.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif"
-        alt="Coding" />
-      <p>
-        Each day starts with diving into coding with focus and passion. This
-        routine reflects my commitment to programming, balancing development
-        with solving problems and creating new things. It's a way of life that
-        keeps me learning and growing every day.
-      </p>
-    </div>
-    <div class="poem_skill">
-      <img
-        class="poem_image"
-        src="https://media0.giphy.com/media/S3KhNnHajzZ4voJKYP/giphy.gif"
-        alt="Poetry" />
-      <p>
-        I love to write poems in Hindi and have won 2nd place in Poem Writing
-        (Kavita Lekhan) at my college, NIT Raipur. Writing poetry allows me to
-        express my creativity and emotions through words, capturing the beauty
-        and depth of the language.
-        <a
-          style="color: yellow"
-          href="https://drive.google.com/file/d/1x_zuBNEKZPScqCM1pFqAwk9YUEIbG8VX/view"
-          >Certificate</a
-        >
-      </p>
-    </div>
-    <div class="cricket">
-      <img
-        class="virat"
-        src="https://media0.giphy.com/media/IejVI3NqwKEG78skNG/giphy.gif"
-        alt="Virat Kohli" />
-      <p>
-        Cricket is a major passion of mine, and I particularly admire Virat
-        Kohli's play. I enjoy immersing myself in the sport, whether it's
-        watching matches or keeping up with the latest news and performances.
-        Cricket holds a special place in my life.
-      </p>
-    </div>
-    <h4>Designed and Developed by VIKAS KUMAR</h4>
-    <!-- footer -->
-    <footer>
-      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/">
-        <img class="inlogo" src="./images/linkedin.png" alt="LinkedIn Logo" />
+    </section>
+
+    <!-- Introduction Section -->
+    <section>
+      <h2 class="section-title animate-on-scroll">Let Me Introduce Myself</h2>
+      
+      <div class="avatar-container animate-on-scroll">
+        <img class="avatar" src="./images/profilePic.jpeg" alt="Profile Picture" />
+      </div>
+
+      <div class="feature-row animate-on-scroll">
+        <div class="feature-img" style="box-shadow: none;">
+          <img src="https://media1.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" alt="Coding" style="max-width: 250px; margin: 0 auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+        </div>
+        <div class="feature-text">
+          <h3>Coding with Passion</h3>
+          <p>
+            Each day starts with diving into coding with focus and passion. This routine reflects my commitment to programming, balancing development with solving problems and creating new things. It's a way of life that keeps me learning and growing every day.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-row animate-on-scroll">
+        <div class="feature-img" style="box-shadow: none;">
+          <img src="https://media0.giphy.com/media/S3KhNnHajzZ4voJKYP/giphy.gif" alt="Poetry" style="max-width: 250px; margin: 0 auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+        </div>
+        <div class="feature-text">
+          <h3>Poetry & Creativity</h3>
+          <p>
+            I love to write poems in Hindi and have won 2nd place in Poem Writing (Kavita Lekhan) at my college, NIT Raipur. Writing poetry allows me to express my creativity and emotions through words, capturing the beauty and depth of the language.
+            <br><br>
+            <a href="https://drive.google.com/file/d/1x_zuBNEKZPScqCM1pFqAwk9YUEIbG8VX/view" target="_blank" class="btn">View Certificate</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-row animate-on-scroll">
+        <div class="feature-img" style="box-shadow: none;">
+          <img src="https://media0.giphy.com/media/IejVI3NqwKEG78skNG/giphy.gif" alt="Cricket" style="max-width: 250px; margin: 0 auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+        </div>
+        <div class="feature-text">
+          <h3>Love for Cricket</h3>
+          <p>
+            Cricket is a major passion of mine, and I particularly admire Virat Kohli's play. I enjoy immersing myself in the sport, whether it's watching matches or keeping up with the latest news and performances. Cricket holds a special place in my life.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/vikas-kumar-577a44204/" target="_blank" aria-label="LinkedIn">
+        <img src="./images/linkedin.png" alt="LinkedIn Logo" />
       </a>
-      <a href="https://github.com/Vikas-18">
-        <img class="gitlogo" src="./images/github.png" alt="GitHub Logo" />
+      <a href="https://github.com/Vikas-18" target="_blank" aria-label="GitHub">
+        <img src="./images/github.png" alt="GitHub Logo" />
       </a>
-      <a href="mailto:vikaskumar2k24ee@gmail.com">
-        <img class="maillogo" src="./images/mail.png" alt="mail Logo" />
+      <a href="mailto:vikaskumar2k24ee@gmail.com" aria-label="Email">
+        <img src="./images/mail.png" alt="mail Logo" />
       </a>
-    </footer>
-  </body>
+    </div>
+    <p class="footer-text">Designed & Developed by <span style="color: var(--accent-primary);">VIKAS KUMAR</span></p>
+  </footer>
+
+</body>
 </html>
